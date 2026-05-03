@@ -45,43 +45,72 @@
 #     Vol = input("Volume: ")
 #     if Vol.isnumeric and int(Vol) > -1 and int(Vol) < 101:
 #         break
-input_sentence = input("Please enter a sentence: ")
-mocking_sentence = ""
-for i in range(len(input_sentence)):
-    if i % 2 == 0:
-        mocking_sentence += input_sentence[i].upper()
-    else:
-        mocking_sentence += input_sentence[i].lower()
-print("Mocking sentence: " + mocking_sentence)
-
-                                                                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# input_sentence = input("Please enter a sentence: ")
+# mocking_sentence = ""
+# for i in range(len(input_sentence)):
+#     if i % 2 == 0:
+#         mocking_sentence += input_sentence[i].upper()
+#     else:
+#         mocking_sentence += input_sentence[i].lower()
+# print("Mocking sentence: " + mocking_sentence)
+# SG = "Singapore"
+# a = SG[0:4]
+# print(a)
+# b = SG[3:6]
+# print(b)
+# c = SG[5:9]
+# print(c)
+# d = SG[0:9:2]
+# print(d)
+# word = ""
+# while True:
+#     if word == "end":
+#         break
+#     word = input("Enter a word: ")
+#     wejn = len(word)
+#     if word == word[::-1]:
+#         print("Yes " + word + " is a palindrome.")
+#     else:
+#         print("No " + word + " is not a palindrome.")
+# names = ["Alice", "Bob", "Carl", "Dylan"]
+# name = ""
+# while name == "":
+#     name = input("What is your name? ")
+#     if name != "":
+#         if name in names:
+#             print("WELCOME")
+#             break
+#         else:
+#             print("Get out.")
+# nricc = input("What is your full NRIC? ")
+# if len(nricc) != 9:
+#     print("Invalid!")
+# elif not nricc[0].isupper() or not nricc[-1].isdigit():
+#     print("Invalid!")
+# elif nricc[0] not in ("M","S", "T", "F", "G"):
+#     print("Invalid!")
+# elif nricc[1:8].isdigit():
+#     print("Valid")
+upper = False
+lower = False
+digit = False
+noother = False
+password = input("What is Your password? ")
+if len(password) > 8:
+    for i in password:
+        if i.isupper():
+            upper = True
+        if i.islower():
+            lower = True
+        if i.isdigit(): 
+            digit = True
+        if i.isalnum():
+            noother = True
+        else:
+            noother = False
+if upper == True and lower == True and digit == True and noother == True:
+    print("Password is Valid.")
+else:
+    print("Password is not Valid")
+    
 

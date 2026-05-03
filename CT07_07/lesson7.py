@@ -78,5 +78,5 @@ import random
 students = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 size = 3
 studentnum = len(students)
-for i in range(0,size):
-    sublist
+# for i in range(0,size):
+#     sublist 
