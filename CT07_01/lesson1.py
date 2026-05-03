@@ -19,13 +19,21 @@
 # print("Average score for " + student_name + " is: " + average_score)
 
 
-Grade = input("Grade?")
-Grade = int(Grade)
-if Grade > 75:
-    print("You got an A")
-elif Grade in range(60,74):
-    print("You got a B")
-elif Grade in range(50,59):
-    print("You got a C")
-else:
-    print("YOU FAIL")
+# Grade = input("Grade?")
+# Grade = int(Grade)
+# if Grade > 75:
+#     print("You got an A")
+# elif Grade in range(60,74):
+#     print("You got a B")
+# elif Grade in range(50,59):
+#     print("You got a C")
+# else:
+#     print("YOU FAIL")
+schedule = [
+	["-", "Monday", "Tuesday", "Wednesday"],
+	["9am", "Math", "English Lang.", "Science"],
+	["10am", "Art", "Math", "PE"],
+	["11am", "Recess", "Recess", "Recess"],
+	["11.45am", "Science", "2nd Lang.", "2nd Lang."]
+]
+print(schedule[1][2])
